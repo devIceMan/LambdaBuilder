@@ -2,3 +2,5 @@
   - git config --global core.autocrlf true
 before_build:
   - nuget restore
+test:
+  assemblies: LambdaBuilder.Tests
