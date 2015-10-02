@@ -3,4 +3,6 @@
 before_build:
   - nuget restore
 test:
-  assemblies: LambdaBuilder.Tests
+  assemblies:
+    - LambdaBuilder.Tests.dll
+    - '**\*.tests.dll'
