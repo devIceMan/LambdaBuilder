@@ -107,7 +107,7 @@
             var r = builder.Call<IEnumerable>(new NestedData());
             r.Should().NotBeNull();
             r.Should().HaveCount(2);
-
+                
             var pair = r.Cast<object[]>().First();
             pair[0].ShouldBeEquivalentTo(pair[1], x => x.IncludingAllDeclaredProperties().IncludingAllRuntimeProperties().IncludingFields());
         }
